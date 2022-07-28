@@ -24,7 +24,10 @@ $headerHeight: 70px;
     }
   }
 }
-
+.log{
+  width: 200px;
+  margin-top: 20px;
+}
 .header {
   background: $dark;
   // width: 100%;
@@ -52,10 +55,12 @@ $headerHeight: 70px;
       font-weight: bold;
       text-decoration: none;
       color: $light;
+     
     }
     &__logotype {
       text-decoration: none;
       margin-bottom: 10px;
+     
     }
 
     &__nav {

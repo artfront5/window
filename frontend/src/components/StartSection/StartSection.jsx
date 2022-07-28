@@ -1,8 +1,10 @@
 import React from 'react';
+import Modal from '../Modal/Modal';
 import css from './StartSection.module.scss';
 
+function StartSEction() {
+  const [isModalActive, setIsModalActive] = React.useState(false);
 
-function StartSEction(props) {
   return (
     <section id={css.start} className={css.startSection}>
       <div className={css.container}>
@@ -10,14 +12,14 @@ function StartSEction(props) {
           УСТАНОВКА ПЛАСТИКОВЫХ ОКОН <p className={css.forrad}>ПО ГОСТ </p>
           НАПРЯМУЮ С ЗАВОДА
         </h1>
-        <a
-          href="https://www.garagebarbers.net/"
+        <button
+          onClick={() => setIsModalActive(true)}
           className={`${css.btn} ${css.btn_brand}`}
           target="_blank"
           rel="noreferrer"
         >
           Заказать обратный звонок
-        </a>
+        </button>
         <div className={css.allTextWing}>
           <span>
             <img src={'img/pngwing.png'} className={css.wing} alt="f" />
@@ -42,6 +44,21 @@ function StartSEction(props) {
           </p>
         </div>
       </div>
+      {isModalActive && (
+        <Modal closeModal={setIsModalActive}>
+          <div onClick={() => setIsModalActive(false)}>x</div>
+
+          <label>
+            Имя:
+            <input type="text" />
+          </label>
+          <label>
+            Номер:
+            <input type="text" />
+          </label>
+          <button>Отправить</button>
+        </Modal>
+      )}
     </section>
   );
 }
