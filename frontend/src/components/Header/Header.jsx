@@ -14,11 +14,12 @@ function Header(props) {
     <header className={css.header}>
       <div className={css.header__content}>
         <Link to="/" className={css.header__content__logotype}>
-          <img
+          {/* <img
             className={css.log}
             src={'img/logotype.png'}
             alt="logo"
-          />
+          /> */}
+          logo
         </Link>
         <nav className={`${css.header__content__nav} ${menuOpen ? css.isMenu : ''}`}>
           <ul>
