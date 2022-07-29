@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 .title {
   text-align: left;
@@ -20,25 +20,24 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+  box-shadow: 0px 0px 5px 3px rgb(163, 161, 161);
   margin-top: 50px;
   text-align: center;
   width: 300px;
   height: 200px;
-  border: 1px solid blue;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: rgba(0, 0, 255, 0.041);
+  margin-right: 25px;
+  margin-left: 25px;
+  // background-color: rgba(0, 0, 255, 0.041);
   transition: transform 0.5s;
+  border-radius: 5px;
 }
 .box:hover{
-border: 1px solid red;
-  background-color: rgba(255, 0, 0, 0.041);
+  background-color: rgba(55, 0, 255, 0.041);
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 1;
-  color: red;
+  color: #0067b6
 }
 .img {
   width: 100px;
