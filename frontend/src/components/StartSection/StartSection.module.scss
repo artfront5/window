@@ -3,16 +3,17 @@
   padding-top: 80px;
   position: relative;
   width: 100%;
+ margin-bottom: 70px;
 }
 
 #start {
-  background: linear-gradient(to right, #1f2f4b, rgba(255, 255, 255, 0)),
-    url(../../../public/img/okno.jpg
+  background: linear-gradient(to bottom right, rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url(../../../public/img/back.png
     );
   background-position: right;
   background-size: cover;
-  height: 600px;
- 
+  height: 650px;
+line-height: 2.5;
 }
 
 .startText1 {
@@ -26,21 +27,21 @@
   font-size: 16px;
   opacity: 60%;  
      margin-bottom: 30px;
- 
+ max-width: 1200px;
 }
 .display_5{
     color: white;
   font-size: 45px;
   margin-bottom: 50px;
   line-height: 50px;
-  width: 600px;
  font-weight: bold;
+ width: 700px;
 }
 .forrad {
-  color: rgb(255, 89, 38);
+  color: #FEB737;
 }
 .container {
-margin-left: 220px;
+margin-left: 320px;
 }
 .wing {
   width: 18px;
@@ -50,7 +51,7 @@ margin-left: 220px;
 }
 .allTextWing{
   margin-top: 50px;
-  
+  margin-bottom: 50px;
 }
 .btn {
   border-radius: 0;
@@ -59,22 +60,21 @@ margin-left: 220px;
   -webkit-font-smoothing: antialiased;
   transition: all 0.8 ease;
   text-decoration: none;
-  border: 1px solid red;
+  border: 1px solid #FEB737;
   font-size: 18px;
-border-radius: 5px;
 }
 
 .btn_brand {
-  background-color: #ff0000;
-  color: white;
+  background-color: #FEB737;
+  color: #333131;
   text-decoration: none;
 }
 
 .btn_brand:hover {
-  color: #fb0000;
-  border-color: #ff0000;
+  color: #FEB737;
+  border-color: #FEB737;
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid #FEB737;
   transition: all .3s ease-in-out;
 }
 
@@ -82,11 +82,13 @@ border-radius: 5px;
 @media (max-width: 767px) {
   .container {
 margin-left: 20px;
+margin-right: 20px;
+width: 100%;
 }
 .startSection {
   font-family: 'NAMU 1600';
   padding-top: 20px;
-  position: absolute;
+  // position: absolute;
   width: 100%;
 }
 .display_5{

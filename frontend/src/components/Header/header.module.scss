@@ -1,9 +1,9 @@
 $Namu: 'NAMU 1600';
 
 // colors
-$dark: rgb(255, 255, 255);
-$light: rgb(44, 43, 43);
-$primary: rgb(162, 162, 246);
+$dark: #006567;
+$light: #FEB737;
+$primary: rgb(172, 172, 219);
 $bg: rbg(244, 244, 255);
 
 //spacing
@@ -25,7 +25,7 @@ $headerHeight: 70px;
   }
 }
 .log{
-  width: 200px;
+  width: 170px;
   margin-top: 20px;
 }
 .header {
@@ -42,7 +42,7 @@ $headerHeight: 70px;
     overflow: hidden;
     color: $light;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -109,6 +109,7 @@ $headerHeight: 70px;
             color: inherit;
             padding: 0.75rem 1.25rem;
             transition: 0.3s ease all;
+            font-size: 16px;
 
             &:hover {
               background: rgba($light, 0.1);

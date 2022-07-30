@@ -1,22 +1,17 @@
 export const typeOption = [
   {
     id: 1,
-    img: 'img/okna.png',
-    title: 'Пластиковые окна',
+    img: 'img/oknobr.jpg',
+    title: 'Установка пластиковых окон',
   },
   {
     id: 2,
-    img: 'img/dveri.png',
-    title: 'Пластиковые двери',
+    img: 'img/balkond.jpg',
+    title: 'Установка пластиковых дверей',
   },
   {
     id: 3,
-    img: 'img/balkon.png',
+    img: 'img/balc.jpg',
     title: 'Остекление балконов',
-  },
-  {
-    id: 4,
-    img: 'img/uteplenie.png',
-    title: 'Утепление',
   },
 ];

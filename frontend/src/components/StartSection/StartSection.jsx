@@ -9,7 +9,7 @@ function StartSEction() {
     <section id={css.start} className={css.startSection}>
       <div className={css.container}>
         <h1 className={css.display_5}>
-          УСТАНОВКА ПЛАСТИКОВЫХ ОКОН <p className={css.forrad}>ПО ГОСТ </p>
+          УСТАНОВКА ПЛАСТИКОВЫХ ОКОН В СПБ<p className={css.forrad}>ПО ГОСТу </p>
           НАПРЯМУЮ С ЗАВОДА
         </h1>
         <button
@@ -22,21 +22,23 @@ function StartSEction() {
         </button>
         <div className={css.allTextWing}>
           <span>
-            <img src={'img/pngwing.png'} className={css.wing} alt="f" />
-            <p className={css.startText1}>НИЗКИЕ ЦЕНЫ</p>
+            <img src={'img/wingr.png'} className={css.wing} alt="f" />
+            <p className={css.startText1}>СКИДКИ</p>
           </span>
           <p className={css.startText}>
-            Мы ориентируемся на рынок и предлагаем цену ниже.
+            Мы разработали уникальную систему скидок и бонусов для наших клиентов.
+            Подробности можно уточнить у менеджеров: +7 (999) 55 61 99;
           </p>
           <span>
-            <img src={'img/pngwing.png'} className={css.wing} alt="f" />
-            <p className={css.startText1}>НАША ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА</p>
+            <img src={'img/wingr.png'} className={css.wing} alt="f" />
+            <p className={css.startText1}>БЕСПЛАТНЫЙ ЗАМЕР</p>
           </span>
           <p className={css.startText}>
-            Наша продукция имеет сертификаты соответствующие текущим ГОСТ
+            Замеры производит сертифицированный специалист в удобное для вас время —
+            работаем в выходные дни.
           </p>
           <span>
-            <img src={'img/pngwing.png'} className={css.wing} alt="f" />
+            <img src={'img/wingr.png'} className={css.wing} alt="f" />
             <p className={css.startText1}>ОФИЦИАЛЬНАЯ ГАРАНТИЯ</p>
           </span>
           <p className={css.startText}>
