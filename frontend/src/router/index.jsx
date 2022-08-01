@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Articles from '../pages/Articles/Articles';
 import Home from '../pages/Home/Home';
+import Projects from '../pages/Projects/Projects';
 
 
 
@@ -11,7 +12,8 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/articles' element={<Articles />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/articles" element={<Articles />} />
       </Routes>
     </BrowserRouter>
   );
