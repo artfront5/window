@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.title {
+  text-align: left;
+  font-size: 40px;
+  color: #006567;
+  margin-top: 50px;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 70px;
+}
+.slider {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider_img {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  transition: all 0.2s;
+}
+
+.slider_img_prev {
+  transform: translateX(-100%);
+}
+
+.slider_img_next {
+  transform: translateX(100%);
+}

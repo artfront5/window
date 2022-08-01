@@ -9,7 +9,7 @@ function StartSEction() {
     <section id={css.start} className={css.startSection}>
       <div className={css.container}>
         <h1 className={css.display_5}>
-          УСТАНОВКА ПЛАСТИКОВЫХ ОКОН В СПБ<p className={css.forrad}>ПО ГОСТу </p>
+          УСТАНОВКА ПЛАСТИКОВЫХ ОКОН В СПб<p className={css.forrad}>ЧЕСТНЫЕ НИЗКИЕ ЦЕНЫ</p>
           НАПРЯМУЮ С ЗАВОДА
         </h1>
         <button
@@ -23,7 +23,7 @@ function StartSEction() {
         <div className={css.allTextWing}>
           <span>
             <img src={'img/wingr.png'} className={css.wing} alt="f" />
-            <p className={css.startText1}>СКИДКИ</p>
+            <p className={css.startText1}>СКИДКИ ДЛЯ ПЕНСИОНЕРОВ И РАБОТНИКОВ БЮДЖЕТНОЙ СФЕРЫ</p>
           </span>
           <p className={css.startText}>
             Мы разработали уникальную систему скидок и бонусов для наших клиентов.
@@ -48,6 +48,8 @@ function StartSEction() {
       </div>
       {isModalActive && (
         <Modal closeModal={setIsModalActive}>
+          <div className={css.modalStyle}>
+
           <div onClick={() => setIsModalActive(false)}>x</div>
 
           <label>
@@ -59,6 +61,7 @@ function StartSEction() {
             <input type="text" />
           </label>
           <button>Отправить</button>
+          </div>
         </Modal>
       )}
     </section>
