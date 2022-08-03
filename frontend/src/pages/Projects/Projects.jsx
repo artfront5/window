@@ -20,7 +20,7 @@ function Projects(props) {
         <div className={css.content}>
           <Slider {...settings}>
             {sliderImg.map((slide) => (
-              <img src={slide} alt="t" />
+              <img className={css.sliderImage} src={slide} alt="t" />
             ))}
           </Slider>
         </div>

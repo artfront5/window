@@ -17,11 +17,17 @@ function Home(props) {
       <CompanyType />
       <StepWorks />
       <FeedbackForm />
-      <Slider autoSlide={true}>
-        {sliderText.map(({ id, name, text }) => (
-          <p key={id} className={css.textP}> {name} <br/>{text}</p>
-        ))}
-      </Slider>
+      <div className={css.wrapperSlider}>
+        <Slider autoSlide={true}>
+          {sliderText.map(({ id, name, text }) => (
+            <p key={id} className={css.textP}>
+              {' '}
+              {name} <br />
+              {text}
+            </p>
+          ))}
+        </Slider>
+      </div>
     </Main>
   );
 }
