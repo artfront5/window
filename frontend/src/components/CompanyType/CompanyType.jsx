@@ -1,11 +1,11 @@
 import React from 'react';
-import css from './CompanyType.module.scss'
+import css from './CompanyType.module.scss';
 
 function CompanyType(props) {
   return (
-    <div class={css.container}>
-      <div class={css.title}>Продукты от проверенных производителей</div>
-      <div class={css.parallax_img}>
+    <div className="container">
+      <div className={css.title}>Продукты от проверенных производителей</div>
+      <div className={css.parallax_img}>
         <div className={css.content}>
           <img src={'img/Euroline.png'} alt="window" className={css.img} />
           <div className={css.text}>

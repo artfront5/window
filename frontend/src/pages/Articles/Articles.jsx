@@ -7,7 +7,7 @@ function Articles(props) {
   return (
     <Main>
       <div className={css.container}>
-        <div class={css.content}>
+        <div className={css.content}>
           {articlesData.map((article) => (
             <Article key={article.id} {...article} />
           ))}

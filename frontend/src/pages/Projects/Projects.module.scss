@@ -41,3 +41,8 @@
 .slider_img_next {
   transform: translateX(100%);
 }
+@media (max-width: 767px) {
+  .title {
+margin-left: 20px;
+}
+}

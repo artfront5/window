@@ -7,6 +7,7 @@ function Modal({ closeModal, children }) {
     <Portal>
       <div className={css.background_modal} onClick={() => closeModal(false)}>
         <div className={css.box} onClick={(event) => event.stopPropagation()}>
+          
           {children}
         </div>
       </div>
