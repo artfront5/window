@@ -5,7 +5,7 @@ function StepOneWork({img, title, text }) {
   return (
     <div className={css.conteiner_card}>
       <div className={css.box}>
-        <img src={img} alt="window" class={css.img} />
+        <img src={img} alt="window" className={css.img} />
         <h2 className={css.boxh2}>{title}</h2>
         <p className={css.textp}>{text}</p>
       </div>

@@ -6,18 +6,18 @@ import css from './Article.module.scss';
 function Article({ img, title, text}) {
   const [IsOpenModal, setIsOPenModal] =React.useState(false)
   return (
-    <div class={css.cards__item}>
-      <div class={css.card}>
+    <div className={css.cards__item}>
+      <div className={css.card}>
         <img
           src={img}
           alt="window"
-          class={`${css.card__image} ${css.card__image__fence}`}
+          className={`${css.card__image} ${css.card__image__fence}`}
         />
-        <div class={css.card__content}>
-          <h3 class={css.card__title}>{title}</h3>
+        <div className={css.card__content}>
+          <h3 className={css.card__title}>{title}</h3>
           <button
             onClick={() => setIsOPenModal(true)}
-            class={`${css.btn} ${css.btn_brand}`}
+            className={`${css.btn} ${css.btn_brand}`}
           >
             Читать
           </button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import FormForCallBack from '../FormForCallBack/FormForCallBack';
 import Modal from '../Modal/Modal';
 import css from './StartSection.module.scss';
 
@@ -7,9 +8,10 @@ function StartSEction() {
 
   return (
     <section id={css.start} className={css.startSection}>
-      <div className={css.container}>
+      <div className="container">
         <h1 className={css.display_5}>
-          УСТАНОВКА ПЛАСТИКОВЫХ ОКОН В СПб<p className={css.forrad}>ЧЕСТНЫЕ НИЗКИЕ ЦЕНЫ</p>
+          УСТАНОВКА ПЛАСТИКОВЫХ ОКОН В СПб <br />{' '}
+          <span className={css.forrad}> ЧЕСТНЫЕ НИЗКИЕ ЦЕНЫ </span> <br />
           НАПРЯМУЮ С ЗАВОДА
         </h1>
         <button
@@ -23,7 +25,9 @@ function StartSEction() {
         <div className={css.allTextWing}>
           <span>
             <img src={'img/wingr.png'} className={css.wing} alt="f" />
-            <p className={css.startText1}>СКИДКИ ДЛЯ ПЕНСИОНЕРОВ И РАБОТНИКОВ БЮДЖЕТНОЙ СФЕРЫ</p>
+            <p className={css.startText1}>
+              СКИДКИ ДЛЯ ПЕНСИОНЕРОВ И РАБОТНИКОВ БЮДЖЕТНОЙ СФЕРЫ
+            </p>
           </span>
           <p className={css.startText}>
             Мы разработали уникальную систему скидок и бонусов для наших клиентов.
@@ -48,20 +52,7 @@ function StartSEction() {
       </div>
       {isModalActive && (
         <Modal closeModal={setIsModalActive}>
-          <div className={css.modalStyle}>
-
-          <div onClick={() => setIsModalActive(false)}>x</div>
-
-          <label>
-            Имя:
-            <input type="text" />
-          </label>
-          <label>
-            Номер:
-            <input type="text" />
-          </label>
-          <button>Отправить</button>
-          </div>
+          <FormForCallBack closeModal={setIsModalActive} />
         </Modal>
       )}
     </section>

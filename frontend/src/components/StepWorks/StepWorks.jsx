@@ -6,7 +6,7 @@ import {stepWorkData} from '../../mock/stepWorkData'
 function StepWorks(props) {
   return (
     <div className={css.container}>
-      <div class={css.title}>Этапы работы</div>
+      <div className={css.title}>Этапы работы</div>
       <div className={css.content}>
         {stepWorkData.map(({ id, img, title, text }) => (
           <StepOneWork key={id} img={img} title={title} text={text}/>
